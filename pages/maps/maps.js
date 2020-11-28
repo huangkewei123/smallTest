@@ -1,3 +1,5 @@
+const util = require('../../utils/util.js')
+
 // pages/maps/maps.js
 Page({
 
@@ -5,14 +7,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nbFrontColor: '#000000',
+    nbBackgroundColor: '#ffffff',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      nbTitle: '测试',
+      nbLoading: false,
+      nbFrontColor: '#ffffff',
+      nbBackgroundColor: '#000000',
+    }),
+    util.sayGoodBye('hkw')
   },
 
   /**

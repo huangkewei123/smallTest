@@ -1,0 +1,16 @@
+<view >
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    
+  </view>
+  <view>
+      <mp-cells title="带跳转的列表项">
+            <mp-cell link hover value="邀请" open-type="share"></mp-cell>
+            <mp-cell link value="分配权限" url="../logs/logs" ></mp-cell>
+      </mp-cells>
+  </view>
+</view>

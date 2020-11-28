@@ -14,6 +14,12 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function sayGoodBye(params) {
+  console.log('hahaha ${params} ' + params)
+} 
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  sayGoodBye: sayGoodBye
 }
+

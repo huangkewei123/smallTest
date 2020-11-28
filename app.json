@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/maps/maps"
+    "pages/maps/maps",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,5 +12,24 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/home.png",
+      "selectedIconPath": "img/anchor.png"
+    },{
+      "pagePath": "pages/maps/maps",
+      "text": "地图",
+      "iconPath": "img/airplay.png",
+      "selectedIconPath": "img/anchor.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "个人中心",
+      "iconPath": "img/anchor.png",
+      "selectedIconPath": "img/anchor.png"
+    }]
+  }
+
 }
