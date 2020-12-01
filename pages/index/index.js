@@ -50,12 +50,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },
-  testButton: function(){
-    console.log("你好");
-    wx.navigateTo({
-      url: '../maps/maps'
-    })
   }
 
 })

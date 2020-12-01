@@ -1,6 +1,4 @@
 <!--index.wxml-->
-<view class="page">
-
 <view class="page__bd">
   <mp-cells title="新消息提示跟摘要信息后，统一在列表右侧">
       <mp-cell title="单行列表" link>
@@ -9,5 +7,4 @@
           </view>
       </mp-cell>
   </mp-cells>
-</view>
 </view>
